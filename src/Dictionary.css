@@ -1,7 +1,7 @@
 .Dictionary h1 {
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: #900048;
     margin-bottom: 20px;
 }
 
@@ -18,11 +18,11 @@
     padding: 6px 10px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    color: #333;
+    color: #900048;
 }
 
 .Dictionary .hint {
     font-size: 11px;
-    color: #666;
+    color: #900048;
     margin-top: 5px;
 }
