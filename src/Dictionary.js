@@ -15,9 +15,8 @@ export default function Dictionary(props) {
   }
 
   function handleSheCodesResponse(response) {
-    setPhotos (response.data.photos);
+    setPhotos(response.data.photos);
   }
-
 
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
@@ -27,9 +26,6 @@ export default function Dictionary(props) {
     axios.get(sheCodesApiUrl).then(handleSheCodesResponse);
   }
 
-
-    
-
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -38,16 +34,17 @@ export default function Dictionary(props) {
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
   }
+
   function load() {
     setLoaded(true);
     search();
   }
+
   if (loaded) {
     return (
       <div className="Dictionary">
         <section>
           <h1>What word do you want to look up?</h1>
-
           <form onSubmit={handleSubmit}>
             <input type="search" onChange={handleKeywordChange} />
           </form>
